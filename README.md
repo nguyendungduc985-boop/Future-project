@@ -1,14 +1,14 @@
 # 🧠 ADVANCED COMPUTER VISION & HUMAN-COMPUTER INTERACTION (HCI) PROJECTS
 
 <p align="center">
-  <a href="#tieng-viet">Tiếng Việt</a> • 
-  <a href="#english">English</a> • 
-  <a href="#korean">한국어</a>
+  <a href="#tieng-viet">Tiếng Việt</a> • 
+  <a href="#english">English</a> • 
+  <a href="#korean">한국어</a>
 </p>
 
 ---
 
-<h2 id="tieng-viet"> 🇻🇳 Tiếng Việt </h2>
+## Tiếng Việt <a name="tieng-viet"></a>
 
 > **Một hệ sinh thái giả lập Kính thông minh (Smart Glasses) tích hợp AI, nhận diện cử chỉ (Computer Vision) và phiên dịch viên thời gian thực (Speech-to-Text & LLM) chạy trực tiếp trên máy tính cá nhân.**
 
@@ -27,11 +27,83 @@ Dự án nhằm mục đích xây dựng phần mềm cốt lõi cho một chi�
 
 Cài đặt các thư viện phụ thuộc:
 bash
+```
 pip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
+```
+---
 
-Thay API Key Gemini của bạn vào các file mã nguồn và chạy ứng dụng hợp nhất:Bashpython kinh_hoan_thien.py
-A smart glasses simulation ecosystem integrating AI, hand gesture recognition (Computer Vision), and real-time translation (Speech-to-Text & LLM) running directly on personal computers.🌟 Project OverviewThis project aims to build the core software for AI-powered Smart Glasses. Although not yet deployed on physical AR/VR hardware, the system simulates core functionalities using a standard PC webcam and microphone. It serves as a zero-cost solution to assist the hearing impaired and facilitate multilingual communication.🛠️ Core Features (Repository Structure)File NameMain FunctionalityTech Stack👁️ mat_than.pyGesture Recognition Module: Tracks 21 hand landmarks. It detects the "OK / A-Okay!" gesture when the thumb and index finger touch, paving the way for touchless HUD control commands.MediaPipe Hands, OpenCV🧠 tritue.pyMultilingual AI Translation Assistant: Listens to foreign languages (configured to Chinese zh-CN by default), connects to API for context-aware natural translation, and outputs smooth Vietnamese audio via tra_loi.mp3.Gemini 2.5 Flash, gTTS, SpeechRecognition🕶️ kinh_hoan_thien.pyIntegrated Smart Glasses: A high-level multithreaded implementation. It simultaneously tracks hand gestures (Thumbs up -> "LIKE/EXCELLENT") and listens to English speech, dynamically rendering Vietnamese subtitles onto the HUD overlay.OpenCV, Pillow (PIL), Gemini API, Threading🚀 Quick StartInstall dependencies:Bashpip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
-Insert your Gemini API Key into the source files and execute:Bashpython kinh_hoan_thien.py
-개인 PC에서 직접 실행되는 AI, 손동작 인식(컴퓨터 비전) 및 실시간 통역(Speech-to-Text & LLM) 기능이 통합된 스마트 글래스 시뮬레이션 에코시스템입니다.🌟 프로젝트 개요본 프로젝트는 AI 기반 스마트 글래스의 핵심 소프트웨어를 구축하는 것을 목표로 합니다. 현재 실제 AR/VR 하드웨어에 구현되지는 않았지만, PC의 웹캠과 마이크를 통해 핵심 기능을 시뮬레이션합니다. 이를 통해 청각 장애인을 지원하고 비용 부담 없이 다국어 소통을 돕는 솔루션을 제공합니다.🛠️ 핵심 기능 (레포지토리 구조)파일명주요 기능사용 기술👁️ mat_than.py손동작 인식 모듈: 21개의 손 관절 포인트를 추적합니다. 엄지와 검지가 맞닿을 때 "OK / A-Okay!" 제스처를 감지하여 향후 HUD 제어 명령을 위한 기반을 마련합니다.MediaPipe Hands, OpenCV🧠 tritue.py다국어 AI 통역 비서: 외국어(기본 설정: 중국어 zh-CN)를 실시간으로 청취하고, 문맥에 맞는 자연스러운 번역을 수행한 뒤 자연스러운 베트남어 음성 파일(tra_loi.mp3)로 출력합니다.Gemini 2.5 Flash, gTTS, SpeechRecognition🕶️ kinh_hoan_thien.py통합 스마트 글래스: 멀티스레딩(Multithreading)으로 구동되는 고급 통합 모듈입니다. 손동작 (엄지 척 -> "LIKE / 최고")을 추적하는 동시에 영어 음성을 감지하여 성조가 포함된 베트남어 자막을 HUD 화면에 실시간으로 매끄럽게 표시합니다.OpenCV, Pillow (PIL), Gemini API, Threading🚀 시작 가이드필수 라이브러리 설치:Bashpip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
-소스 코드 파일에 본인의 Gemini API Key를 입력한 후 아래 명령어를 실행하세요:Bashpython kinh_hoan_thien.py
-📬 Contact / 연락처Developer: Nguyễn Đức Dũng (덕용)Email: nguyendungduc985@gmail.comMajor: Artificial Intelligence (AI) @ East Asia University (Đại học Đông Á)
+## English <a name="english"></a>
+
+> **A Smart Glasses simulation ecosystem powered by AI, Computer Vision hand-gesture recognition, and real-time speech translation running directly on a personal computer.**
+
+### 🌟 Project Overview
+This project aims to develop the core software of an AI-powered Smart Glasses system for communication assistance and human-computer interaction. Although not yet deployed on AR/VR hardware, all major modules are fully functional using a standard webcam and microphone, providing an accessible and low-cost solution for hearing-impaired users and multilingual communication.
+
+### 🛠️ Current Features (Repository Structure)
+
+| File Name | Main Function | Technologies |
+| :--- | :--- | :--- |
+| 👁️ **mat_than.py** | **Hand Gesture Vision Module**: Tracks 21 hand landmarks and automatically detects the `"OK / A-Okay!"` gesture when the thumb and index finger touch. Designed as the foundation for future HUD controls. | `MediaPipe Hands`, `OpenCV` |
+| 🧠 **tritue.py** | **Multilingual AI Translator Assistant**: Listens to speech (default: Chinese `zh-CN`), performs contextual translation, and generates Vietnamese voice responses through `tra_loi.mp3`. | `Gemini 2.5 Flash`, `gTTS`, `SpeechRecognition` |
+| 🕶️ **kinh_hoan_thien.py** | **Unified Smart Glasses System**: Uses multithreading to simultaneously detect hand gestures (`Like` → `"EXCELLENT"`), listen to English conversations, translate them, and display Vietnamese subtitles on a HUD interface. | `OpenCV`, `Pillow (PIL)`, `Gemini API`, `Threading` |
+
+### 🚀 Installation
+
+Install required dependencies:
+
+```bash
+pip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
+```
+
+### 🎯 Future Development Goals
+
+- Real-time AR Glasses deployment
+- Sign Language Recognition
+- Face Recognition & User Profiles
+- Voice Command Navigation
+- AI-powered Context Awareness
+- Offline Translation Support
+- HUD Menu Control via Hand Gestures
+
+---
+
+## 한국어 <a name="korean"></a>
+
+> **AI, 컴퓨터 비전 기반 손동작 인식, 실시간 음성 번역 기능을 통합한 스마트 안경(Smart Glasses) 시뮬레이션 프로젝트입니다.**
+
+### 🌟 프로젝트 소개
+
+본 프로젝트는 AI 기반 스마트 안경의 핵심 소프트웨어를 개발하는 것을 목표로 합니다. 아직 AR/VR 하드웨어에는 적용되지 않았지만, 일반 웹캠과 마이크만으로 핵심 기능을 구현하여 청각 장애인 지원 및 다국어 의사소통을 위한 저비용 솔루션을 제공합니다.
+
+### 🛠️ 현재 기능 (저장소 구조)
+
+| 파일명 | 주요 기능 | 사용 기술 |
+| :--- | :--- | :--- |
+| 👁️ **mat_than.py** | **손동작 인식 모듈**: 손의 21개 랜드마크를 추적하고 엄지와 검지가 닿을 때 `"OK / A-Okay!"` 제스처를 자동으로 인식합니다. 향후 HUD 제어 기능의 기반이 됩니다. | `MediaPipe Hands`, `OpenCV` |
+| 🧠 **tritue.py** | **다국어 AI 통역 비서**: 음성을 인식하고(기본 언어: 중국어 `zh-CN`), 문맥에 맞게 번역한 후 `tra_loi.mp3`를 통해 베트남어 음성으로 출력합니다. | `Gemini 2.5 Flash`, `gTTS`, `SpeechRecognition` |
+| 🕶️ **kinh_hoan_thien.py** | **통합 스마트 안경 시스템**: 멀티스레딩을 사용하여 손동작(`Like` → `"최고!"`) 인식, 영어 대화 청취, 번역 및 HUD 자막 표시를 동시에 수행합니다. | `OpenCV`, `Pillow (PIL)`, `Gemini API`, `Threading` |
+
+### 🚀 설치 방법
+
+필수 라이브러리 설치:
+
+```bash
+pip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
+```
+
+### 🎯 향후 개발 계획
+
+- AR 스마트 안경 실기기 적용
+- 수어(Sign Language) 인식
+- 얼굴 인식 및 사용자 프로필 관리
+- 음성 명령 기반 내비게이션
+- AI 상황 인식(Context Awareness)
+- 오프라인 번역 기능
+- 손동작 기반 HUD 메뉴 제어
+
+- 📬 Contact / 연락처
+Developer: Nguyễn Đức Dũng (덕용)
+
+Email: nguyendungduc985@gmail.com
+
+Major: Artificial Intelligence (AI) @ East Asia University (Đại học Đông Á)
