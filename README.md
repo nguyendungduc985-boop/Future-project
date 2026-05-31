@@ -26,8 +26,9 @@ Dự án nhằm mục đích xây dựng phần mềm cốt lõi cho một chi�
 ### 🚀 Hướng Dẫn Cài Đặt
 
 Cài đặt các thư viện phụ thuộc:
-```bash
+bash
 pip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
+
 Thay API Key Gemini của bạn vào các file mã nguồn và chạy ứng dụng hợp nhất:Bashpython kinh_hoan_thien.py
 A smart glasses simulation ecosystem integrating AI, hand gesture recognition (Computer Vision), and real-time translation (Speech-to-Text & LLM) running directly on personal computers.🌟 Project OverviewThis project aims to build the core software for AI-powered Smart Glasses. Although not yet deployed on physical AR/VR hardware, the system simulates core functionalities using a standard PC webcam and microphone. It serves as a zero-cost solution to assist the hearing impaired and facilitate multilingual communication.🛠️ Core Features (Repository Structure)File NameMain FunctionalityTech Stack👁️ mat_than.pyGesture Recognition Module: Tracks 21 hand landmarks. It detects the "OK / A-Okay!" gesture when the thumb and index finger touch, paving the way for touchless HUD control commands.MediaPipe Hands, OpenCV🧠 tritue.pyMultilingual AI Translation Assistant: Listens to foreign languages (configured to Chinese zh-CN by default), connects to API for context-aware natural translation, and outputs smooth Vietnamese audio via tra_loi.mp3.Gemini 2.5 Flash, gTTS, SpeechRecognition🕶️ kinh_hoan_thien.pyIntegrated Smart Glasses: A high-level multithreaded implementation. It simultaneously tracks hand gestures (Thumbs up -> "LIKE/EXCELLENT") and listens to English speech, dynamically rendering Vietnamese subtitles onto the HUD overlay.OpenCV, Pillow (PIL), Gemini API, Threading🚀 Quick StartInstall dependencies:Bashpip install opencv-python mediapipe SpeechRecognition google-generativeai pillow numpy gTTS
 Insert your Gemini API Key into the source files and execute:Bashpython kinh_hoan_thien.py
